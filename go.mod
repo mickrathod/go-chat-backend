@@ -1,6 +1,6 @@
 module go-chat-backend
 
-go 1.27.2
+go 1.23
 
 require (
 	github.com/go-sql-driver/mysql v1.10.1

@@ -1,7 +1,7 @@
 # ------------------------------------------------------------------------------
 # Go WebSocket Backend Container
 # ------------------------------------------------------------------------------
-FROM golang:1.24-alpine AS builder
+FROM golang:1.23-alpine AS builder
 WORKDIR /app
 
 RUN apk add --no-cache ca-certificates git
