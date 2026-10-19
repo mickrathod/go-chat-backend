@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acme SaaS Store &mdash; Live Chat SDK Customer Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+      background: #090d16;
+      color: #f1f5f9;
+      line-height: 1.6;
+    }
+    .header {
+      padding: 24px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .brand { font-size: 20px; font-weight: 800; color: #fff; }
+    .hero {
+      max-width: 900px;
+      margin: 80px auto;
+      text-align: center;
+      padding: 0 20px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 20px;
+      background: rgba(0, 173, 216, 0.15);
+      border: 1px solid rgba(0, 173, 216, 0.3);
+      color: #00add8;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 48px;
+      font-weight: 800;
+      letter-spacing: -1px;
+      margin-bottom: 16px;
+      line-height: 1.15;
+    }
+    p { font-size: 18px; color: #94a3b8; max-width: 600px; margin: 0 auto 36px; }
+    .btn-cta {
+      display: inline-block;
+      background: #00add8;
+      color: #fff;
+      padding: 14px 28px;
+      border-radius: 12px;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 8px 24px rgba(0, 173, 216, 0.4);
+    }
+    .code-box {
+      margin-top: 60px;
+      background: #0f141f;
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 16px;
+      padding: 24px;
+      text-align: left;
+      font-family: monospace;
+      font-size: 13px;
+      color: #38bdf8;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    }
+    .comment { color: #64748b; }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="brand">👟 SneakerVault &bull; Client Website Demo</div>
+    <div style="font-size: 13px; color: #10b981; font-weight: 600;">● SDK Widget Installed</div>
+  </header>
+
+  <main class="hero">
+    <div class="badge">TESTING YOUR EMBEDDED CHAT SDK</div>
+    <h1>Look at the Bottom-Right Corner of this Page!</h1>
+    <p>This is a completely normal customer website. Your Chat SDK was installed here with just 1 line of script tag.</p>
+    <a href="#" class="btn-cta" onclick="document.getElementById('go-chat-bubble').click(); return false;">
+      Click Here or Click the Floating Bubble (💬)
+    </a>
+
+    <div class="code-box">
+      <span class="comment">&lt;!-- How your clients install your Chat SDK on ANY website (Shopify, WordPress, Webflow, Custom HTML) --&gt;</span><br><br>
+      &lt;script <br>
+      &nbsp;&nbsp;src="http://localhost:8080/sdk/chat-widget.js"<br>
+      &nbsp;&nbsp;data-app-id="client_sneaker_store"<br>
+      &nbsp;&nbsp;data-color="#00add8"&gt;<br>
+      &lt;/script&gt;
+    </div>
+  </main>
+
+  <!-- HERE IS YOUR CHAT SDK IN ACTION: -->
+  <script 
+    src="/sdk/chat-widget.js" 
+    data-app-id="client_sneaker_store" 
+    data-color="#00add8">
+  </script>
+
+</body>
+</html>
